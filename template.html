@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title></title>
+    <style>
+        body {
+            font-size: 62.5%;
+            font-family: "Microsoft YaHei", Arial;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .viewport {
+            max-width: 640px;
+            min-width: 300px;
+            margin: 0 auto;
+        }
+
+        .text {
+            visibility: hidden;
+            padding: 5px;
+        }
+        ul {
+            list-style: decimal;
+        }
+        li {
+            font-size: 1.8em;
+            padding: 5px;
+            border-bottom: solid;
+            border-block-color: rgba(255, 255, 255, 0.5);
+            border-bottom-width: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+                     
+    </ul>
+
+    <script type="text/javascript">
+        (function () {
+            var list = document.querySelectorAll('li');
+            for (let i = 0; i < list.length; i++) {
+                (function (line) {
+                    line.addEventListener('click', function () {
+                        var textList = line.getElementsByClassName('text');
+                        for (let j = 0; j < textList.length; j++) {
+                            let text = textList[j];
+                            text.style.visibility = "visible";
+                        }
+                    })
+                })(list[i])
+
+            }
+        })();
+    </script>
+</body>
+
+</html>
