@@ -17,13 +17,6 @@
             overflow-x: hidden;
             overflow-y: auto;
         }
-
-        .viewport {
-            max-width: 640px;
-            min-width: 300px;
-            margin: 0 auto;
-        }
-
         .text {
             visibility: hidden;
             padding: 5px;
@@ -34,35 +27,32 @@
         li {
             font-size: 1.8em;
             padding: 5px;
-            border-bottom: solid;
-            border-block-color: rgba(255, 255, 255, 0.5);
-            border-bottom-width: 1px;
         }
     </style>
 </head>
 
 <body>
     <ul>
-                     
+           <li><a href="./files/2008-01.html">2008 passage 1</a></li>    
+           <li><a href="./files/2008-02.html">2008 passage 2</a></li>   
+           <li><a href="./files/2008-03.html">2008 passage 3</a></li>  
+           <li><a href="./files/2008-04.html">2008 passage 4</a></li>    
+           
+           <br/>
+
+           <li><a href="./files/2009-01.html">2009 passage 1</a></li>    
+           <li><a href="./files/2009-02.html">2009 passage 2</a></li>   
+           <li><a href="./files/2009-03.html">2009 passage 3</a></li>  
+           <li><a href="./files/2009-04.html">2009 passage 4</a></li>   
+
+           
+           <br/>
+
+           <li><a href="./files/2010-01.html">2010 passage 1</a></li>    
+           <li><a href="./files/2010-02.html">2010 passage 2</a></li>   
+           <li><a href="./files/2010-03.html">2010 passage 3</a></li>  
     </ul>
 
-    <script type="text/javascript">
-        (function () {
-            var list = document.querySelectorAll('li');
-            for (let i = 0; i < list.length; i++) {
-                (function (line) {
-                    line.addEventListener('click', function () {
-                        var textList = line.getElementsByClassName('text');
-                        for (let j = 0; j < textList.length; j++) {
-                            let text = textList[j];
-                            text.style.visibility = "visible";
-                        }
-                    })
-                })(list[i])
-
-            }
-        })();
-    </script>
 </body>
 
 </html>

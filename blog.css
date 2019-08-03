@@ -1,0 +1,33 @@
+body {
+    font-size: 62.5%;
+    font-family: "Microsoft YaHei", Arial;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.viewport {
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.text {
+    visibility: hidden;
+    padding: 5px;
+    margin-left: 20px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: decimal inside;
+}
+li {
+    font-size: 1.8em;
+    padding: 5px;
+    /* border-bottom: solid; */
+    /* border-block-color: rgba(255, 255, 255, 0.5); */
+    /* border-bottom-width: 1px; */
+}
+
+ul>li:nth-of-type(odd){ background:white;}
+ul>li:nth-of-type(even){ background:#eeeeee;}
